@@ -9,6 +9,7 @@ export default {
       this.gridOptions = {
         ...this.options,
         onGridReady: (params) => params.api.sizeColumnsToFit(),
+        getRowId: (params) => params.data.id,
       };
       for (const column of this.html_columns) {
         if (this.gridOptions.columnDefs[column].cellRenderer === undefined) {

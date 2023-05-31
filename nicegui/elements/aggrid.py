@@ -6,7 +6,7 @@ from ..dependencies import register_component
 from ..element import Element
 from ..functions.javascript import run_javascript
 
-register_component('aggrid', __file__, 'aggrid.js', ['lib/ag-grid-community.min.js'])
+register_component('aggrid', __file__, 'aggrid.js', ['lib/ag-grid-enterprise.min.js'])
 
 
 class AgGrid(Element):
